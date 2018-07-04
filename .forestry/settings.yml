@@ -3,14 +3,15 @@ new_page_extension: md
 auto_deploy: true
 admin_path: 
 webhook_url: 
-collections: 
+collections:
+- path: _posts
+  label: Posts
+  create: all
+- path: ''
+  label: Pages
+  create: all
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":year:/:month:/:day:/:filename:"
-sections:
-- path: content/posts
-  templates: 
-    - default
-  hidden: true
